@@ -2,13 +2,9 @@ var app = angular.module('caffeinehit.controllers', []);
 
 app.controller("YelpController", function ($scope, YelpService, NgMap) {
 
-
 	NgMap.getMap().then(function(map) {
 		$scope.map = map;
-	})
-	// $scope.$on('mapInitialized', function (event, map) {
-		
-	// });
+	});
 
 	$scope.yelp = YelpService;
 
